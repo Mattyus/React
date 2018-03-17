@@ -1,3 +1,10 @@
+## Installation
+Télécharger le ZIP, et l'extraire dans un répertoire
+### `cd  {chemin du repertoire}`
+### `npm install`
+### `npm run build`
+### `serve -s build`
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
