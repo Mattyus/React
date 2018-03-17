@@ -5,6 +5,10 @@ Télécharger le ZIP, et l'extraire dans un répertoire
 ### `npm run build`
 ### `serve -s build`
 
+Le site sera accéssible à l'url : http://localhost:5000
+
+
+## Introduction
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
