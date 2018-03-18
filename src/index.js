@@ -103,9 +103,16 @@ class Bookmark extends React.Component{
             	<td>{this.props.bookmark.title}</td>
             	<td>{this.props.bookmark.author_name}</td>
             	<td><Moment format="DD/MM/YYYY">{this.props.bookmark.added_date}</Moment></td>
-				<td className="col-button"><Button bsStyle="primary" onClick={() => this.props.modif(this.props.bookmark)}><Glyphicon glyph="pencil"/></Button></td>
-				<td className="col-button"><Button bsStyle="danger" onClick={() => this.props.del(this.props.bookmark.id)}><Glyphicon glyph="remove-circle"/></Button></td>
-				
+				<td className="col-button">
+					<Button bsStyle="primary" onClick={() => this.props.modif(this.props.bookmark)}>
+						<Glyphicon glyph="pencil"/>
+					</Button>
+				</td>
+				<td className="col-button">
+					<Button bsStyle="danger" onClick={() => { if (window.confirm('Êtes-vous sûr de vouloir supprimer ce lien ?')) this.props.del(this.props.bookmark.id)}}>
+						<Glyphicon glyph="remove-circle"/>
+					</Button>
+				</td>
           	</tr>
 		);
   	}
